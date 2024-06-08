@@ -1,13 +1,11 @@
-CREATE DATABASE IF NOT EXISTS hotel_reservation_db;
-
-CREATE TABLE IF NOT EXISTS hotel_reservation_db.guests(
+CREATE TABLE IF NOT EXISTS guests(
     name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
     phone VARCHAR(20),
     id CHAR(36)PRIMARY KEY
 );
 
-CREATE TABLE IF NOT EXISTS hotel_reservation_db.hotels(
+CREATE TABLE IF NOT EXISTS hotels(
      id CHAR(36)PRIMARY KEY,
      name VARCHAR(255) NOT NULL,
      email VARCHAR(255) NOT NULL,
@@ -17,7 +15,7 @@ CREATE TABLE IF NOT EXISTS hotel_reservation_db.hotels(
 );
 
 
-CREATE TABLE IF NOT EXISTS hotel_reservation_db.reservations(
+CREATE TABLE IF NOT EXISTS reservations(
    id CHAR(36)PRIMARY KEY,
    status VARCHAR(50) NOT NULL,
    hotel_id CHAR(36) NOT NULL,
