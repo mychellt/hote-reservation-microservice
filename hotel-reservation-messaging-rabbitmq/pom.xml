@@ -9,7 +9,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>hotel-reservation-messaging</artifactId>
+    <artifactId>hotel-reservation-messaging-rabbitmq</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

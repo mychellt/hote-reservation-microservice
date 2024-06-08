@@ -82,7 +82,7 @@
 
 			<dependency>
 				<groupId>gft.challenge</groupId>
-				<artifactId>hotel-reservation-messaging</artifactId>
+				<artifactId>hotel-reservation-messaging-rabbitmq</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 		</dependencies>
@@ -125,7 +125,7 @@
 		<module>hotel-reservation-domain</module>
 		<module>hotel-reservation-core</module>
 		<module>hotel-reservation-processor</module>
-		<module>hotel-reservation-messaging</module>
+		<module>hotel-reservation-messaging-rabbitmq</module>
 		<module>hotel-reservation-persistence</module>
 		<module>hotel-reservation-application</module>
 		<module>hotel-reservation-http-resources</module>
