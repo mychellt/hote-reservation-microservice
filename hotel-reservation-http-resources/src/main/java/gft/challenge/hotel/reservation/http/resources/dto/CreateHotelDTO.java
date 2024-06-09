@@ -15,7 +15,4 @@ public class CreateHotelDTO {
 
   @JsonAlias(value = "number_of_rooms")
   private Integer numberOfRooms;
-
-  @JsonAlias(value = "available_rooms")
-  private Integer availableRooms;
 }
