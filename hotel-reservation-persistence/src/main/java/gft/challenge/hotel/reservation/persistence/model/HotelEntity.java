@@ -12,8 +12,8 @@ import java.util.UUID;
 @Setter
 public class HotelEntity {
   @Id
-  @GeneratedValue(generator = "uuid")
-  @Column(columnDefinition = "BINARY(16)")
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  @Column(columnDefinition = "UUID")
   private UUID id;
   private String name;
   private String email;
