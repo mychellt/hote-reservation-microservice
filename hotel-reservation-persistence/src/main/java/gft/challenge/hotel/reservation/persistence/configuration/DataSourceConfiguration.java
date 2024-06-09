@@ -17,7 +17,7 @@ public class DataSourceConfiguration {
   @Getter
   @Setter
   @Validated
-  @ConfigurationProperties("app.postgres.datasource")
+  @ConfigurationProperties("spring.datasource")
   public static class DataSourcePoolProperties extends PoolProperties {
     private Integer port;
     private String host;

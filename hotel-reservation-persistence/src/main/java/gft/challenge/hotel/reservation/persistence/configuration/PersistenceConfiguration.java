@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @ComponentScan(basePackages = {"gft.challenge.hotel.reservation.persistence"})
 @EntityScan(basePackages = {"gft.challenge.hotel.reservation.persistence.model"})
-@EnableJpaRepositories(basePackages = {"gft.challenge.hotel.reservation.persistence.adapters"})
+@EnableJpaRepositories(basePackages = {"gft.challenge.hotel.reservation.persistence"})
 @EnableTransactionManagement
 public class PersistenceConfiguration {
 

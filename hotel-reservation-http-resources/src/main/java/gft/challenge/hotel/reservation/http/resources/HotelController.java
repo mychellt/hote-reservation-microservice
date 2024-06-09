@@ -6,7 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@RestController(Paths.HOTEL)
+@RestController
+@RequestMapping(value = "/api/hotel")
 public class HotelController {
   private final CreateHotelPort createHotelPort;
   private final ResourcesModelMapper mapper;
@@ -23,7 +24,7 @@ public class HotelController {
     return null;
   }
 
-  @GetMapping
+  @GetMapping(value = "/all")
   public ResponseEntity<Void> getAll() {
     return null;
   }
