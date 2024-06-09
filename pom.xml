@@ -89,6 +89,12 @@
 
 			<dependency>
 				<groupId>gft.challenge</groupId>
+				<artifactId>hotel-reservation-http-resources</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>gft.challenge</groupId>
 				<artifactId>hotel-reservation-messaging-rabbitmq</artifactId>
 				<version>${project.version}</version>
 			</dependency>
@@ -108,6 +114,18 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<inherited>true</inherited>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-install-plugin</artifactId>
+				<inherited>true</inherited>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
 					<source>${java.version}</source>
@@ -117,19 +135,28 @@
 					<showDeprecation>true</showDeprecation>
 					<showWarnings>true</showWarnings>
 					<annotationProcessorPaths>
+
+						<annotationProcessorPath>
+							<groupId>org.springframework.boot</groupId>
+							<artifactId>spring-boot-configuration-processor</artifactId>
+						</annotationProcessorPath>
+
 						<annotationProcessorPath>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
 							<version>${lombok.version}</version>
 						</annotationProcessorPath>
+
 						<annotationProcessorPath>
 							<groupId>org.mapstruct</groupId>
 							<artifactId>mapstruct-processor</artifactId>
 							<version>${org.mapstruct.version}</version>
 						</annotationProcessorPath>
+
 					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
+
 		</plugins>
 	</build>
 

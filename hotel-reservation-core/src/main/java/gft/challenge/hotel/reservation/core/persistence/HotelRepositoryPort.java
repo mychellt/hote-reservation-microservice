@@ -1,4 +1,4 @@
-package gft.challenge.hotel.reservation.core.command.persistence;
+package gft.challenge.hotel.reservation.core.persistence;
 
 import gft.challenge.hotel.reservation.domain.Hotel;
 

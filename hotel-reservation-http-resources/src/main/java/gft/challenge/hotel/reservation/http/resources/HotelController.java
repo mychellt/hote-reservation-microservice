@@ -1,12 +1,24 @@
 package gft.challenge.hotel.reservation.http.resources;
 
+import gft.challenge.hotel.reservation.core.business.CreateHotelPort;
+import gft.challenge.hotel.reservation.http.resources.mappers.ResourcesModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
+@RestController(Paths.HOTEL)
 public class HotelController {
+  private final CreateHotelPort createHotelPort;
+  private final ResourcesModelMapper mapper;
 
-  @PostMapping
+  @Autowired
+  public HotelController(final CreateHotelPort createHotelPort,
+                         final ResourcesModelMapper mapper) {
+    this.createHotelPort = createHotelPort;
+    this.mapper = mapper;
+  }
+
+  @PostMapping()
   public ResponseEntity<Void> create() {
     return null;
   }

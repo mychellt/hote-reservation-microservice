@@ -1,7 +1,7 @@
 package gft.challenge.hotel.reservation.processor;
 
 import gft.challenge.hotel.reservation.core.command.Context;
-import gft.challenge.hotel.reservation.core.command.CreateHotelPort;
+import gft.challenge.hotel.reservation.core.business.CreateHotelPort;
 import org.springframework.stereotype.Service;
 
 @Service

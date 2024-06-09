@@ -1,6 +1,6 @@
 package gft.challenge.hotel.reservation.persistence.adapters;
 
-import gft.challenge.hotel.reservation.core.command.persistence.HotelRepositoryPort;
+import gft.challenge.hotel.reservation.core.persistence.HotelRepositoryPort;
 import gft.challenge.hotel.reservation.domain.Hotel;
 import gft.challenge.hotel.reservation.persistence.mappers.PersistenceEntityMapper;
 import gft.challenge.hotel.reservation.persistence.repository.HotelRepository;
