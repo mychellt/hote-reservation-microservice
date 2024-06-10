@@ -79,14 +79,4 @@ public class HotelController {
                 .build())
             .orElse(null));
   }
-
-  @DeleteMapping
-  public ResponseEntity<Void> delete() {
-    return null;
-  }
-
-  @PutMapping
-  public ResponseEntity<Void> update() {
-    return null;
-  }
 }
