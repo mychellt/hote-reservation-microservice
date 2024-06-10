@@ -19,9 +19,9 @@ This is a simple hotel reservation system built using Java and Spring Boot.
 ## Setup
 
 1. **Clone the Repository**:
-<code>
+
 git clone https://github.com/mychellt/hotel-reservation-service.git
-</code>
+
 
 ## Configuration
 
