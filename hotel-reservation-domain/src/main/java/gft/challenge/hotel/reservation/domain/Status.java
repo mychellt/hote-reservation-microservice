@@ -14,7 +14,7 @@ import static org.apache.commons.lang3.StringUtils.isNotBlank;
 public enum Status {
   CONFIRMED("Confirmed"),
   CANCELLED("Cancelled"),
-  PENDING("Conexão Perida");
+  PENDING("Pending");
 
   private final String description;
 

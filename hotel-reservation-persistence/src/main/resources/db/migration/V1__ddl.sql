@@ -1,10 +1,3 @@
-CREATE TABLE IF NOT EXISTS guests(
-    name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL,
-    phone VARCHAR(20),
-    id CHAR(36)PRIMARY KEY
-);
-
 CREATE TABLE IF NOT EXISTS hotels(
      id UUID PRIMARY KEY,
      name VARCHAR(255) NOT NULL,
@@ -16,13 +9,12 @@ CREATE TABLE IF NOT EXISTS hotels(
 
 
 CREATE TABLE IF NOT EXISTS reservations(
-   id CHAR(36)PRIMARY KEY,
+   id UUID PRIMARY KEY,
+   travel_reservation_id UUID NOT NULL,
    status VARCHAR(50) NOT NULL,
-   hotel_id CHAR(36) NOT NULL,
-   guest_id CHAR(36) NOT NULL,
+   hotel_id UUID NOT NULL,
    number_of_rooms INT NOT NULL,
    check_in_date DATE,
    check_out_date DATE,
-   FOREIGN KEY (hotel_id) REFERENCES hotels(id),
-   FOREIGN KEY (guest_id) REFERENCES guests(id)
+   FOREIGN KEY (hotel_id) REFERENCES hotels(id)
 );
